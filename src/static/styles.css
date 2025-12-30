@@ -145,8 +145,8 @@ footer {
 
 .participants-list {
   margin-top: 10px;
-  padding-left: 30px; /* ensure bullets are visible */
-  list-style-type: disc;
+  padding-left: 0;
+  list-style: none;
 }
 
 .participants-list li {
@@ -156,11 +156,26 @@ footer {
   background: rgba(26, 35, 126, 0.04);
   padding: 6px 8px;
   border-radius: 4px;
-  list-style-position: outside;
-  display: list-item;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-/* subtle marker color */
-.participants-list li::marker {
-  color: #1a237e;
+.participant-email {
+  word-break: break-word;
+}
+
+.participant-remove {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.participant-remove:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
