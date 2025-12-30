@@ -142,3 +142,23 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-list {
+  margin-top: 10px;
+  padding-left: 20px; /* keep bullets visible */
+}
+
+.participants-list li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #263238;
+  background: rgba(26, 35, 126, 0.04);
+  padding: 6px 8px;
+  border-radius: 4px;
+  list-style-position: outside;
+}
+
+/* subtle marker color */
+.participants-list li::marker {
+  color: #1a237e;
+}
