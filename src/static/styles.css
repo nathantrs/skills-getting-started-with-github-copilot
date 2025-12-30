@@ -145,7 +145,8 @@ footer {
 
 .participants-list {
   margin-top: 10px;
-  padding-left: 20px; /* keep bullets visible */
+  padding-left: 30px; /* ensure bullets are visible */
+  list-style-type: disc;
 }
 
 .participants-list li {
@@ -156,6 +157,7 @@ footer {
   padding: 6px 8px;
   border-radius: 4px;
   list-style-position: outside;
+  display: list-item;
 }
 
 /* subtle marker color */

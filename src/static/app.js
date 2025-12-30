@@ -33,6 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const participantsListEl = document.createElement("ul");
         participantsListEl.className = "participants-list";
+        // ensure bullets and spacing are visible across browsers and add accessibility label
+        participantsListEl.style.listStyleType = "disc";
+        participantsListEl.style.paddingLeft = "30px";
+        participantsListEl.setAttribute("aria-label", `Participants for ${name}`);
 
         if (details.participants && details.participants.length > 0) {
           details.participants.forEach((p) => {
